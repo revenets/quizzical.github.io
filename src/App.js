@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Quiz from './components/Quiz';
+import Start from './components/Start';
+
 
 function App() {
+  const [isStarted, setIsStarted] = useState(false)
+
+  const startQuiz = () => {
+    setIsStarted(!isStarted)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+        {!isStarted && <Start start={startQuiz}/>}
+        {isStarted && <Quiz />}
     </div>
   );
 }
