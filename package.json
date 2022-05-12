@@ -2,7 +2,7 @@
   "name": "quizzical",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://quizzical.github.io",
+  "homepage": "http://revenets.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
