@@ -7,7 +7,7 @@ function Start(props) {
                 <div className="start-page__body">
                     <h1 className="start-page__title">Quizzical</h1>
                     <p className="start-page__text">
-                        Challenge your brain with 5 questions
+                        Challenge your brain with this quiz
                     </p>
                     <button className="start-page__button button" onClick={props.start}>Start quiz</button>
                 </div>
